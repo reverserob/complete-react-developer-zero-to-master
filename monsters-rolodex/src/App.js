@@ -32,8 +32,6 @@ import { SearchBox } from "./components/search-box/search-box.component";
              monsters: [],
              searchField: ''
          };
-
-         this.handleChange = this.handleChange.bind(this)
      }
 
      componentDidMount() {
@@ -42,7 +40,7 @@ import { SearchBox } from "./components/search-box/search-box.component";
              .then(users => this.setState({monsters: users}))
      }
 
-     handleChange = (e) => {
+     handleChange = e => {
          this.setState({ searchField: e.target.value } )
      };
 
@@ -56,6 +54,7 @@ import { SearchBox } from "./components/search-box/search-box.component";
         return (
             <div className="App">
                 <img src={logo} className="App-logo" alt="logo" />
+                <h1>Cats Cards</h1>
 
                 <SearchBox handleChange={ this.handleChange}  />
                 <CardList monsters={filteredMonsters} />
