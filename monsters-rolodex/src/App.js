@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { CardList } from './components/card-list/list.component';
-
+import { SearchBox } from "./components/search-box/search-box.component";
 // function App() {
 //   return (
 //     <div className="App">
@@ -31,7 +31,9 @@ import { CardList } from './components/card-list/list.component';
          this.state = {
              monsters: [],
              searchField: ''
-         }
+         };
+
+         this.handleChange = this.handleChange.bind(this)
      }
 
      componentDidMount() {
@@ -39,6 +41,10 @@ import { CardList } from './components/card-list/list.component';
              .then(res => res.json())
              .then(users => this.setState({monsters: users}))
      }
+
+     handleChange = (e) => {
+         this.setState({ searchField: e.target.value } )
+     };
 
      render() {
 
@@ -51,11 +57,8 @@ import { CardList } from './components/card-list/list.component';
             <div className="App">
                 <img src={logo} className="App-logo" alt="logo" />
 
-                <input type='search' placeholder='search cats' onChange={ e => this.setState({ searchField: e.target.value } )}
-                />
+                <SearchBox handleChange={ this.handleChange}  />
                 <CardList monsters={filteredMonsters} />
-              {/*  <CardList monsters={ monsters } />*/}
-
          </div>
         );
      }
