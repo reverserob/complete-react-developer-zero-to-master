@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/complete-react-developer-zero-to-master/monster-rolodex/static/css/main.c52e20b5.chunk.css",
+    "main.js": "/complete-react-developer-zero-to-master/monster-rolodex/static/js/main.ca61a4a7.chunk.js",
+    "main.js.map": "/complete-react-developer-zero-to-master/monster-rolodex/static/js/main.ca61a4a7.chunk.js.map",
+    "runtime~main.js": "/complete-react-developer-zero-to-master/monster-rolodex/static/js/runtime~main.1065a841.js",
+    "runtime~main.js.map": "/complete-react-developer-zero-to-master/monster-rolodex/static/js/runtime~main.1065a841.js.map",
+    "static/js/2.df0b5369.chunk.js": "/complete-react-developer-zero-to-master/monster-rolodex/static/js/2.df0b5369.chunk.js",
+    "static/js/2.df0b5369.chunk.js.map": "/complete-react-developer-zero-to-master/monster-rolodex/static/js/2.df0b5369.chunk.js.map",
+    "index.html": "/complete-react-developer-zero-to-master/monster-rolodex/index.html",
+    "precache-manifest.0bcdeb95265bc487d36fc8cce9f1f24e.js": "/complete-react-developer-zero-to-master/monster-rolodex/precache-manifest.0bcdeb95265bc487d36fc8cce9f1f24e.js",
+    "service-worker.js": "/complete-react-developer-zero-to-master/monster-rolodex/service-worker.js",
+    "static/css/main.c52e20b5.chunk.css.map": "/complete-react-developer-zero-to-master/monster-rolodex/static/css/main.c52e20b5.chunk.css.map",
+    "static/media/logo.svg": "/complete-react-developer-zero-to-master/monster-rolodex/static/media/logo.5d5d9eef.svg"
+  }
+}
