@@ -1,4 +1,5 @@
 .DS_Store
+./node_modules
 ./monsters-rolodex/node_modules
 ./crown-clothing/node_modules
 ./monsters-rolodex/.idea
