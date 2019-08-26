@@ -3,7 +3,7 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
-// import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
+import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
 import './sign-up.styles.scss';
 
@@ -30,12 +30,12 @@ class SignUp extends React.Component {
         }
 
         try {
-           // const { user } = await auth.createUserWithEmailAndPassword(
-          //      email,
-          //      password
-          //  );
+           const { user } = await auth.createUserWithEmailAndPassword(
+               email,
+               password
+           );
 
-           // await createUserProfileDocument(user, { displayName });
+            await createUserProfileDocument(user, { displayName });
 
             this.setState({
                 displayName: '',
@@ -65,7 +65,7 @@ class SignUp extends React.Component {
                         type='text'
                         name='displayName'
                         value={displayName}
-                       // onChange={this.handleChange}
+                        onChange={this.handleChange}
                         label='Display Name'
                         required
                     />
@@ -73,7 +73,7 @@ class SignUp extends React.Component {
                         type='email'
                         name='email'
                         value={email}
-                       // onChange={this.handleChange}
+                        onChange={this.handleChange}
                         label='Email'
                         required
                     />
@@ -81,7 +81,7 @@ class SignUp extends React.Component {
                         type='password'
                         name='password'
                         value={password}
-                        // onChange={this.handleChange}
+                        onChange={this.handleChange}
                         label='Password'
                         required
                     />
@@ -89,7 +89,7 @@ class SignUp extends React.Component {
                         type='password'
                         name='confirmPassword'
                         value={confirmPassword}
-                       // onChange={this.handleChange}
+                        onChange={this.handleChange}
                         label='Confirm Password'
                         required
                     />
